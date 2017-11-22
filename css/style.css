@@ -92,10 +92,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 4em;
   margin: 1.2em 0 0 0;
   color:#2C3E50;
+  text-align: center;
   
+}
+
+p{
+ text-align: center;
+   
 }
 
 ul,
@@ -386,6 +392,8 @@ Small Screens
   bottom:10px;
   overflow:auto;
 }
+
+
  
 
 #links ul {
@@ -417,7 +425,11 @@ span i[class*="icono"]{
             color: #333;
             transition: all 0.2s;
 }
-
+#notes-div{
+   background-color:#25B89A;
+   border-radius: 5px;
+      
+}
        
        /* SLIDE*/
 

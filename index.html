@@ -1,9 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/artIcon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/artIcon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="dist/icono.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+  
+    <!-- ====================================================MENU&PAINEL==================================================== -->
+    <div id="menu" class="panel" role="navigation">
+        <img src="img/slide.png" width="60">
+        <ul>
+            <li><a href="https://github.com/arthur-pedro/portfolio"><span class="icon-github nav-icon"></span>Github</a></li>
+            <li><a href="#about"><span class="icon-about nav-icon"></span>About</a></li>
+            <li><a href="#projects"><span class="icon-book nav-icon"></span>Projects</a></li>
+            <li><a href="#contact"><span class="icon-contact nav-icon"></span>Contact </a></li>
+           <li><a href="#options"><span class="icon-options nav-icon"></span>Options</a></li>
+        </ul>
+    </div>
 
+    <div class="masthead">
+        <div class="wrap push">
+
+            <a href="#menu" class="menu-link">&#9776;</a>
+
+            <h1 class="title">arthur.pedro</h1>
+            <p class="subtitle">A tiny slide panel navigation jQuery plugin with big dreams.</p>
+
+            <ul class="btn-list">
+               
+                <li><a Class="btn" href="arq/curriculo.pdf" download="Curriculo">Download PDF Curriculo</a></li>
+                <li><a class="btn" href="whatsapp://send?text=https://arthur-pedro.github.io/portfolio/" data-action="share/whatsapp/share">WhatsApp Sharing Button</a></li>
+            </ul>
+        </div> <!-- /.wrap -->
+    </div> <!-- /.masthead-->
+    
+    <!-- ====================================================CORPO [IMAGENS-SLIDE]==================================================== -->
+    <div class="wrap push">
+        
+        <h2 id="about">Who is Arthur Pedro?</h2>
+
+            <p>Eu sou apenas um rapaz, Latino-Americano, Sem dinheiro no banco, Sem parentes importantes, E vindo do interior</p>
+            <p>Mas trago de cabeça, Uma canção do rádio, Em que um antigo, Compositor baiano, Me dizia, Tudo é divino, Tudo é maravilhoso</p>
+
+
+
+        <h2 id="projects">Projects</h2>
+		
+		<div id="slider">
+			<figure class="img">
+				<img src="https://i.pinimg.com/originals/75/4b/19/754b1904c7492427f6a585c02ae61fa7.jpg" alt>
+				<img src="https://i.pinimg.com/736x/4e/24/21/4e24218e35cb315290fb7d68d232d826.jpg" alt>
+				<img src="https://i.pinimg.com/1200x/f5/8f/48/f58f48ee325605cbacd6eeb5c9baa79c.jpg" alt>
+				<img src="https://i.pinimg.com/originals/cb/ff/b4/cbffb4528c53e3689465c9eaf97edc2a.jpg" alt>
+
+				<img src="https://i.pinimg.com/1200x/c0/32/9f/c0329fb1834e5267d966736d24510b89.jpg" alt>
+			</figure>
+		</div>
+
+
+       
+
+        <h2 id="notes">Other notes</h2>
+        <p>Under development!!</p>
+        <div class="skill">
+        <h2>Skills</h2>
+        <ul style="padding-top: 30px">
+            <li>Java: &#10029;  &#10029;  &#10029;  &#10029;</li>
+            <li>HTML: &#10029;  &#10029;  &#10029;</li>
+            <li>CSS: &#10029;  &#10029;</li>
+            <li>C: &#10029;  &#10029;</li>
+            <li>Arduino: &#10029;  &#10029;</li>
+            <li>Photoshop: &#10029;</li>
+        </ul>
+
+        </div>
+        
+
+        <h2 id="options">Feedback</h2>
+
+       
+
+        <h2 id="contact">Meet me</h2>
+        
+ 
+
+    <!-- ====================================================RODAPÉ==================================================== -->
+<footer>
+    <div class="credits">
+        <p>Created by <a href="https://github.com/arthur-pedro">Arthur P L S Santos</a></p>
+    </div> <!-- /.credits-->
+    <div class="footer-links">
+
+    <nav id="links">
+        <ul class="teste">
+        <li><a href="https://github.com/arthur-pedro"><span><i class="icon-github"></i></span></a></li>
+        <li><a href="https://www.instagram.com/art.pbr/?hl=pt-br"><span><i class="icono-instagram"></i></span></a></li>
+        <li><a href="https://www.linkedin.com/in/arthur-pedro-473a14103/"><span><i class="icono-linkedIn"></i></span></a></li>
+        <li><a href="https://www.facebook.com/arthur.pedro.395?ref=bookmarks"><span><i class="icono-facebook"></i></span></a></li>
+        <li><a href="https://br.pinterest.com/art_pbr/"><span><i class="icono-image"></i></span></a></li>
+    </ul>
+    </nav>    
+    </div>
+</footer>
+ <!-- /.wrap-->
+
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script src="js/slide.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
 </body>
 </html>

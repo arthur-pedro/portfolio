@@ -24,6 +24,10 @@ Small Screens
 -----------------------------------
 */
 
+.icono-instagram{
+font-size: 10px;
+}
+
 @media only screen and (max-width: 31.25em) {
     body {
       font-size: .875em;
@@ -50,7 +54,15 @@ Small Screens
     table {
       font-size: .75em;
     }
+	.link li {
+      font-size: .75em;
+    }
 
+    .link li:first-of-type {
+      margin-right: .2em;
+    }
+
+   
 }
 /*
 NORMALIZAR
@@ -322,6 +334,7 @@ FOOTER
 span i[class*="icono"]{
 	color: #333;
     transition: all 0.2s;
+
 }
 
 
@@ -337,18 +350,14 @@ span i[class*="icono"]{
 
 }
 
-.btn-link li:first-of-type {
-  margin-right: 1em;
-}
-
 .btn-link {
   padding: 1em .5em;
   text-align: center;
   border-radius: 6px;
 }
 
-.btn-link:link,
-.btn-link:visited {
+.btnlink:link,
+.btnlink:visited {
   background: #25B89A;
   color: #fff;
 }

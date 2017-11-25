@@ -3038,21 +3038,7 @@ sidebar - #404f4c
 				display: block;
 			}
 
-			.spotlights > section > .image:before {
-				-moz-transition: opacity 1s ease;
-				-webkit-transition: opacity 1s ease;
-				-ms-transition: opacity 1s ease;
-				transition: opacity 1s ease;
-				background: #99fff1;
-				content: '';
-				display: block;
-				height: 100%;
-				left: 0;
-				opacity: 0;
-				position: absolute;
-				top: 0;
-				width: 100%;
-			}
+			
 
 		.spotlights > section > .content {
 			padding: 4em 5em 2em 5em ;
@@ -3266,7 +3252,7 @@ sidebar - #404f4c
 		}
 
 		.wrapper.style2 {
-			background-color: #474c4c;
+			background-color: #1a4972;
 		}
 
 		.wrapper.style2-alt {

@@ -4,6 +4,7 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$message = $_POST['message'];
 
 
 require_once("/opt/NetMake/v9/wwwroot/HTML/portfolio/PHPMailer/class.phpmailer.php");
@@ -22,9 +23,9 @@ try {
 
     //Recipients
 
-    $from = "a.santos@netmake.com.br";
+    $from = "arthurpedroweb@gmail.com";
 
-    $mail->setFrom($from, 'Arthur Pedro');
+    $mail->setFrom($from, 'suporte');
     $mail->addAddress($from, $name);     // Add a recipient
 
     /*//Attachments
@@ -33,8 +34,8 @@ try {
 */
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Contato';
-    $mail->Body    = 'Email enviado de '.$email.' para '.$from;
+    $mail->Subject = $name;
+    $mail->Body    = 'Email enviado de '.$email.' para '.$from.'<br /><br />'.$message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
@@ -45,4 +46,9 @@ try {
 }
 
 
+if(isHTML == true){
+     #include file="caminho-do-menu.hml" 
+}
+
 ?>
+

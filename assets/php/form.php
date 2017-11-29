@@ -1,10 +1,23 @@
+
 <?php
    
+
 
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+
+
+
+function pegaValor($valor) {
+    return isset($_POST[$name]) ? $_POST[$name] : '';
+}
+
+function validaEmail($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+
 
 
 require_once("/opt/NetMake/v9/wwwroot/HTML/portfolio/PHPMailer/class.phpmailer.php");
@@ -40,15 +53,16 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
+    
+    header("Location: /HTML/portfolio/email_enviado.html");
+
+  
+
 } catch (Exception $e) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
 
-
-if(isHTML == true){
-     #include file="caminho-do-menu.hml" 
-}
 
 ?>
 

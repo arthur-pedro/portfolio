@@ -20,7 +20,7 @@ function validaEmail($email) {
 
 
 
-require_once("/../../PHPMailer/class.phpmailer.php");
+require_once("../../PHPMailer/class.phpmailer.php");
 
 $mail = new PHPMailer();                              // Passing `true` enables exceptions
 try {
